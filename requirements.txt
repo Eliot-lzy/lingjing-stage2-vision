@@ -1,0 +1,11 @@
+--extra-index-url https://download.pytorch.org/whl/cu132
+
+torch==2.14.1+cu132
+torchvision==0.29.1+cu132
+ultralytics==8.4.197
+opencv-python==5.0.0.93
+openai==3.42.0
+python-dotenv==1.2.4
+numpy==2.4.6
+pandas==3.0.6
+matplotlib==3.11.2
