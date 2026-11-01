@@ -9,3 +9,4 @@ python-dotenv==1.2.4
 numpy==2.4.6
 pandas==3.0.6
 matplotlib==3.11.2
+json-repair

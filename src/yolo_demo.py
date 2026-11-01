@@ -50,8 +50,7 @@ def main() -> None:
     result = results[0]
 
     annotated_image = result.plot()
-    output_dir = args.output_dir
-    output_dir.mkdir(parents=True, exist_ok=True)
+
 
     image_output = output_dir / f"{args.image.stem}_yolo.jpg"
     json_output = output_dir / f"{args.image.stem}_yolo.json"
