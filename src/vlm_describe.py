@@ -213,7 +213,7 @@ def request_with_backoff(
                     },
                 ],
                 temperature=0.1,
-                max_tokens=2500,
+                max_tokens=4096,
             )
         except (RateLimitError, APITimeoutError, APIConnectionError) as error:
             last_error = error

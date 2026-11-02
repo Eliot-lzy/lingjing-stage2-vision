@@ -51,6 +51,8 @@ def main() -> None:
 
     annotated_image = result.plot()
 
+    output_dir = args.output_dir
+    output_dir.mkdir(parents=True, exist_ok=True)
 
     image_output = output_dir / f"{args.image.stem}_yolo.jpg"
     json_output = output_dir / f"{args.image.stem}_yolo.json"
@@ -94,6 +96,7 @@ def main() -> None:
     )
 
     print(f"\nDetected objects: {len(detections)}")
+
     for object_name, count in counts.items():
         print(f"  {object_name}: {count}")
 
